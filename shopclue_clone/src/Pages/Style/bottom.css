@@ -1,0 +1,40 @@
+.bottom{
+    border: 1px solid grey;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 10px;
+    gap: 3px;
+    background-color:white;
+}
+.bottom2{
+   border-radius: 5px;
+   border: 1px solid rgb(224, 129, 129);
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+.bottom3{
+    border: 1px solid rgb(224, 129, 129);
+    width: auto;
+    height: auto;
+    gap: 3px;
+}
+.bottom4{
+    border: 1px solid rgb(224, 129, 129);
+    width: auto;
+    height: auto;
+    gap: 3px;
+}
+.bottom5{
+    border: 1px solid rgb(224, 129, 129);
+    width: auto;
+    height: auto;
+    gap: 3px;
+}
+.bottom1{
+    width: auto;
+    height: auto;
+    gap: 3px;
+    border: 1px solid rgb(224, 129, 129);
+}
