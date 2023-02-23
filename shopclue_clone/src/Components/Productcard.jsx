@@ -6,9 +6,10 @@ import {
     Text,
     Stack,
     Image,
+    Button
   } from '@chakra-ui/react';
   import { useParams,Link as Routerid } from 'react-router-dom';
-  export default function Productcard({Id,name,image,price,rating,off}) {
+  export default function Productcard({Id,name,image,price,rating,}) {
     return (
       <Center py={12}>
         <Routerid to={`/product/${Id}`}>
@@ -71,6 +72,7 @@ import {
             </Stack>
           </Stack>
         </Box>
+       
         </Routerid>
       </Center>
     );

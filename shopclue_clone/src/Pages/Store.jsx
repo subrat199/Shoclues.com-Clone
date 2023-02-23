@@ -5,6 +5,8 @@ import { Grid, GridItem } from '@chakra-ui/react'
 import {  useParams } from "react-router-dom";
 import { useSearchParams } from 'react-router-dom';
 import Productcard from './../Components/Productcard';
+import Footer from './../Components/Footer';
+import Carousel from './../Components/Carousel';
 const initstate={
   products:[],
   isLoading:true,
@@ -54,7 +56,7 @@ const Store = () => {
         getdata() 
     },[page,orderBy])
 const getdata= () =>{
-  let apiUrl=getUrl(`http://localhost:8080/products?_limit=5&_page=${page}`,sort,orderBy)
+  let apiUrl=getUrl(`http://localhost:8080/products?_limit=4&_page=${page}`,sort,orderBy)
     axios
     .get(apiUrl)
     .then((res)=>{
@@ -84,9 +86,9 @@ marginBottom:'10px'
 }
 const {products,isLoading,isError}=state;
   return (
-       <div>
-      <button onClick={()=>{setOrderBy('asc')}} >ORDER BY ASC</button> <br />
-      <button onClick={()=>{setOrderBy('desc')}}>ORDER BY DESC</button>
+    <>
+    <Carousel/>
+     <div>
         <Grid templateColumns='repeat(4, 1fr)' gap={6}>
         {
              products.map((product)=>{
@@ -99,6 +101,8 @@ const {products,isLoading,isError}=state;
                         Id={product.id}
                         rating={product.rating}
                         off={product.off}
+                      
+                        
                         />
                     </GridItem>
                 )
@@ -110,8 +114,12 @@ const {products,isLoading,isError}=state;
           <button disabled={page===1}>{page}</button>
           <button onClick={()=>setPage(page+1)} style={styles}>NEXT</button>
         </div>
+        <button onClick={()=>{setOrderBy('asc')}} style={{width:"150px",border:"1px solid grey"}} >ORDER BY ASC</button>
+      <button onClick={()=>{setOrderBy('desc')}} style={{width:"150px",border:"1px solid grey"}}>ORDER BY DESC</button>
     </div>
-    
+    <Footer/>
+    </>
+      
   )
 }
 

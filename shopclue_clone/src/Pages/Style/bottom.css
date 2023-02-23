@@ -1,33 +1,35 @@
 .bottom{
-    border: 1px solid grey;
+    
     height: auto;
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    margin-top: 10px;
+    margin-top: 20px;
     gap: 3px;
     background-color:white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .bottom2{
    border-radius: 5px;
-   border: 1px solid rgb(224, 129, 129);
+
     width: auto;
     height: auto;
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .bottom3{
-    border: 1px solid rgb(224, 129, 129);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     width: auto;
     height: auto;
     gap: 3px;
 }
 .bottom4{
-    border: 1px solid rgb(224, 129, 129);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     width: auto;
     height: auto;
     gap: 3px;
 }
 .bottom5{
-    border: 1px solid rgb(224, 129, 129);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     width: auto;
     height: auto;
     gap: 3px;
@@ -36,5 +38,5 @@
     width: auto;
     height: auto;
     gap: 3px;
-    border: 1px solid rgb(224, 129, 129);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
