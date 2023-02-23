@@ -6,7 +6,7 @@
       "image": "https://cdn.shopclues.com/images1/thumbnails/115246/200/200/152689876-115246212-1659944528.jpg",
       "price": 269,
       "rating": 4.5,
-      "off":"37%"
+      "off": "37%"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "image": "https://cdn.shopclues.com/images1/thumbnails/81476/200/200/135627858-81476269-1665754103.jpg",
       "price": 310,
       "rating": 4.4,
-      "off":"8%"
+      "off": "8%"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "image": "https://cdn.shopclues.com/images1/thumbnails/71795/200/200/128902274-71795769-1653057803.jpg",
       "price": 110,
       "rating": 4.7,
-      "off":"17%"
+      "off": "17%"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "image": "https://cdn.shopclues.com/images1/thumbnails/115044/200/200/152634665-115044372-1629705035.jpg",
       "price": 139,
       "rating": 4.2,
-      "off":"10%"
+      "off": "10%"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "image": "https://cdn.shopclues.com/images1/thumbnails/95123/200/200/142672875-95123237-1645016499.jpg",
       "price": 169,
       "rating": 4.2,
-      "off":"2%"
+      "off": "2%"
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "image": "https://cdn.shopclues.com/images1/thumbnails/95155/200/200/142698419-95155481-1653692385.jpg",
       "price": 270,
       "rating": 4.4,
-      "off":"46%"
+      "off": "46%"
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "image": "https://cdn.shopclues.com/images1/thumbnails/99370/200/200/145508146-99370521-1668508420.jpg",
       "price": 269,
       "rating": 4.5,
-      "off":"37%"
+      "off": "37%"
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "image": "https://cdn.shopclues.com/images1/thumbnails/95357/200/200/142826933-95357827-1664550819.jpg",
       "price": 299,
       "rating": 4.5,
-      "off":"37%"
+      "off": "37%"
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "image": "https://cdn.shopclues.com/images1/thumbnails/112883/200/200/151860087-112883707-1664649308.jpg",
       "price": 400,
       "rating": 4.5,
-      "off":"17%"
+      "off": "17%"
     },
     {
       "id": 10,
@@ -78,7 +78,14 @@
       "image": "https://cdn.shopclues.com/images1/thumbnails/98012/200/200/144475154-98012302-1664648956.jpg",
       "price": 369,
       "rating": 4.8,
-      "off":"27%"
+      "off": "27%"
+    },
+    {
+      "name": "Subrat Kumar Nayak",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.4XB8NF1awQyApnQDDmBmQwHaEo&pid=Api&P=0",
+      "price": "35477",
+      "rating": "3.5",
+      "id": 11
     }
   ]
 }

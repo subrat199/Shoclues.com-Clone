@@ -41,7 +41,7 @@ import {
   export default function Footer() {
     return (
         <>
-          <Reactcontainer maxW='85%'  centerContent>
+          <Reactcontainer maxW='90%'  centerContent marginTop={"20px"} marginBottom={"20px"}>
           <Reactbox padding='5'  color='black' maxW='77%' style={{boxShadow: '1px 2px 9px #F4AAB9'}}>
     There are many benefits to a joint design and development system. Not only
     does it bring benefits to the design team, but it also brings benefits to

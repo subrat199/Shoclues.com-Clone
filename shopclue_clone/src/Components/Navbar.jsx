@@ -1,7 +1,4 @@
 import React from 'react'
-// import { MdSettings } from 'react-icons/md'
-import {  HStack } from '@chakra-ui/react'
-import {SearchIcon} from '@chakra-ui/icons'
 import {Link as ReactLink, Navigate} from  'react-router-dom'
 import { VStack } from '@chakra-ui/react'
 import { Container } from '@chakra-ui/react'
@@ -271,7 +268,7 @@ export default function Navbar() {
           </Text>
           </ReactLink>
         </Stack>
-        <Carousel/>
+       
     </Box>
     
   );
