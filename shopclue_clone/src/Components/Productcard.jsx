@@ -9,10 +9,11 @@ import {
     Button
   } from '@chakra-ui/react';
   import { useParams,Link as Routerid } from 'react-router-dom';
-  export default function Productcard({Id,name,image,price,rating,}) {
+  export default function Productcard({Id,name,image,price,rating,remove,addTocart}) {
+
     return (
       <Center py={12}>
-        <Routerid to={`/product/${Id}`}>
+       
         <Box
           role={'group'}
           p={4}
@@ -45,6 +46,7 @@ import {
                 filter: 'blur(20px)',
               },
             }}>
+               <Routerid to={`/product/${Id}`}>
             <Image
               rounded={'lg'}
               height={230}
@@ -53,6 +55,8 @@ import {
               src={image}
 
             />
+            </Routerid>
+           
           </Box>
           <Stack pt={10} align={'center'}>
           <Text fontWeight={800} fontSize={'xl'}>
@@ -67,13 +71,16 @@ import {
             <Stack direction={'row'} align={'center'}>
               <Text fontWeight={800} fontSize={'l'}>
                 rating:{rating}
-              </Text>
+              </Text>  <br />
+            
               
             </Stack>
+            <Button onClick={()=>remove(Id)}>Delete</Button>
+            <Button onClick={()=>addTocart(Id)}>Add to Cart</Button>
           </Stack>
         </Box>
        
-        </Routerid>
+      
       </Center>
     );
   }

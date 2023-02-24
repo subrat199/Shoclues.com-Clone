@@ -1,14 +1,14 @@
 import React from 'react'
-
+import "../Pages/Style/bottom.css"
 const DailyEssentials = () => {
   return (
     <>
-    <h1 >
+    <h1>
         Daily Essentials
     </h1>
       <div className='bottom'>
         
-        <div className='bottom1' style={{alignItems:"center"}}>
+        <div className='bottom1'>
             <img src="https://cdn.shopclues.com/images1/thumbnails/105589/280/1/149278210-105589660-1585251645.jpg" alt="" style={{width:"40%"}}/>
             <h3>Name:Cookies Essentials</h3>
             <h5>Starting at Rs 49</h5>

@@ -51,6 +51,8 @@ const Store = () => {
     const [searchParams, setSearchParams] = useSearchParams();
     const [orderBy,setOrderBy]=useState("")
     const [page,setPage]=useState(getCurrentPageUrl(searchParams.get("page")) || 1)
+    const params=useParams()
+    console.log(params)
     const sort='price'
     useEffect(() =>{
         getdata() 
@@ -84,6 +86,22 @@ border:'1px solid black',
 width:'50px',
 marginBottom:'10px'
 }
+
+  const remove = async (pid) => {
+    await fetch(`http://localhost:8080/products/${pid}`, {
+      method: "DELETE",
+    });
+  getdata();
+  };
+  
+  const addTocart = async (pid) => {
+    await fetch(`http://localhost:8080/cart/${pid}`, {
+      method: "POST",
+      
+    });
+    console.log(pid)
+    alert("Item Added to Cart SuccessFully")
+  };
 const {products,isLoading,isError}=state;
   return (
     <>
@@ -100,9 +118,10 @@ const {products,isLoading,isError}=state;
                         image={product.image}
                         Id={product.id}
                         rating={product.rating}
-                        off={product.off}
-                      
-                        
+                        off={product.off}  
+                        remove={remove}   
+                        addTocart={addTocart}
+                                          
                         />
                     </GridItem>
                 )

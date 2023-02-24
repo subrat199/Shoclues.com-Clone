@@ -1,5 +1,5 @@
 .bottom{
-    
+    margin: auto;
     height: auto;
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -10,7 +10,6 @@
 }
 .bottom2{
    border-radius: 5px;
-
     width: auto;
     height: auto;
     text-align: center;

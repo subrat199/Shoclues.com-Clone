@@ -155,6 +155,16 @@ export default function Navbar() {
             Search
           </Text>
           </ReactLink>
+          <ReactLink to='/addtocart'>
+          <Text
+            as={'a'}
+            fontSize={'sm'}
+            fontWeight={400}
+            variant={'link'}
+            href={'#'}>
+             cart
+          </Text>
+          </ReactLink>
         </Stack>
       </Flex>
       <VStack>
@@ -267,6 +277,7 @@ export default function Navbar() {
             Mobile Accessories
           </Text>
           </ReactLink>
+          
         </Stack>
        
     </Box>
