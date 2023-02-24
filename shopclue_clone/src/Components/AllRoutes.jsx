@@ -2,7 +2,6 @@ import React from 'react'
 import {Routes,Route} from 'react-router-dom'
 import Home from '../Pages/Home';
 import Store from '../Pages/Store';
-import PrivateRoute from './PrivateRoute';
 import Men from './../Pages/Men';
 import OnlyApple from './../Pages/OnlyApple';
 import Support from './../Pages/Support';
@@ -10,6 +9,8 @@ import Login from './../Pages/Login';
 import Admin from './../Pages/Admin';
 import Search from './../Pages/Search';
 import SingleProduct from './../Pages/SingleProduct';
+import PrivateRoute from './PrivateRoute';
+import Addtocart from './../Pages/Addtocart';
 const AllRoutes = () => {
   return (
     <div>
@@ -24,6 +25,7 @@ const AllRoutes = () => {
             <Route path='/login' element={<Login/>}/>
             <Route path='/admin' element={<Admin/>}/>
             <Route path='/search' element={<Search/>}/>
+            <Route path='/addtocart' element={<Addtocart/>}/>
         </Routes>
     </div>
   )

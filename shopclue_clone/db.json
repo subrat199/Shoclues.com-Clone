@@ -71,21 +71,9 @@
       "price": 400,
       "rating": 4.5,
       "off": "17%"
-    },
-    {
-      "id": 10,
-      "name": "Nokia 310 ",
-      "image": "https://cdn.shopclues.com/images1/thumbnails/98012/200/200/144475154-98012302-1664648956.jpg",
-      "price": 369,
-      "rating": 4.8,
-      "off": "27%"
-    },
-    {
-      "name": "Subrat Kumar Nayak",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.4XB8NF1awQyApnQDDmBmQwHaEo&pid=Api&P=0",
-      "price": "35477",
-      "rating": "3.5",
-      "id": 11
     }
+  ],
+  "cart":[
+    
   ]
 }
