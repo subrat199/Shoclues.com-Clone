@@ -6,7 +6,7 @@ import {  useParams } from "react-router-dom";
 import { useSearchParams } from 'react-router-dom';
 import Productcard from './../Components/Productcard';
 import Footer from './../Components/Footer';
-import Carousel from './../Components/Carousel';
+// import Carousel from './../Components/Carousel';
 const initstate={
   products:[],
   isLoading:true,
@@ -58,7 +58,7 @@ const Store = () => {
         getdata() 
     },[page,orderBy])
 const getdata= () =>{
-  let apiUrl=getUrl(`http://localhost:8080/products?_limit=4&_page=${page}`,sort,orderBy)
+  let apiUrl=getUrl(`http://localhost:8080/products?_limit=8&_page=${page}`,sort,orderBy)
     axios
     .get(apiUrl)
     .then((res)=>{
@@ -97,15 +97,18 @@ marginBottom:'10px'
   const addTocart = async (pid) => {
     await fetch(`http://localhost:8080/cart/${pid}`, {
       method: "POST",
-      
+      headers:{
+        "Content-type":"application/json"
+      },
+      body:JSON.stringify(`http://localhost:8080/products/${pid}`)
     });
-    console.log(pid)
+    getdata();
+    
     alert("Item Added to Cart SuccessFully")
   };
 const {products,isLoading,isError}=state;
   return (
     <>
-    <Carousel/>
      <div>
         <Grid templateColumns='repeat(4, 1fr)' gap={6}>
         {
@@ -120,8 +123,7 @@ const {products,isLoading,isError}=state;
                         rating={product.rating}
                         off={product.off}  
                         remove={remove}   
-                        addTocart={addTocart}
-                                          
+                        addTocart={addTocart}                 
                         />
                     </GridItem>
                 )

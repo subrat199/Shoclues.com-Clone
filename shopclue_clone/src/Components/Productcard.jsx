@@ -10,7 +10,6 @@ import {
   } from '@chakra-ui/react';
   import { useParams,Link as Routerid } from 'react-router-dom';
   export default function Productcard({Id,name,image,price,rating,remove,addTocart}) {
-
     return (
       <Center py={12}>
        
@@ -72,8 +71,6 @@ import {
               <Text fontWeight={800} fontSize={'l'}>
                 rating:{rating}
               </Text>  <br />
-            
-              
             </Stack>
             <Button onClick={()=>remove(Id)}>Delete</Button>
             <Button onClick={()=>addTocart(Id)}>Add to Cart</Button>
