@@ -11,6 +11,7 @@ import Search from './../Pages/Search';
 import SingleProduct from './../Pages/SingleProduct';
 import PrivateRoute from './PrivateRoute';
 import Addtocart from './../Pages/Addtocart';
+import Signup from './../Pages/Signup';
 const AllRoutes = () => {
   return (
     <div>
@@ -26,6 +27,7 @@ const AllRoutes = () => {
             <Route path='/admin' element={<Admin/>}/>
             <Route path='/search' element={<Search/>}/>
             <Route path='/addtocart' element={<Addtocart/>}/>
+            <Route path='/signup' element={<Signup/>}/>
         </Routes>
     </div>
   )

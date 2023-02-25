@@ -22,12 +22,6 @@ import {
   HamburgerIcon,
   CloseIcon,
 } from '@chakra-ui/icons';
-// function Example() {
-//     return <Icon as={MdSettings} />
-//   }
-import Carousel from './Carousel';
-import CarouselBottom from './../Pages/CarouselBottom';
-import Footer from './Footer';
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
   return (
@@ -165,6 +159,16 @@ export default function Navbar() {
              cart
           </Text>
           </ReactLink>
+          <ReactLink to='/signup'>
+          <Text
+            as={'a'}
+            fontSize={'sm'}
+            fontWeight={400}
+            variant={'link'}
+            href={'#'}>
+            Signup
+          </Text>
+          </ReactLink>
         </Stack>
       </Flex>
       <VStack>
@@ -277,11 +281,8 @@ export default function Navbar() {
             Mobile Accessories
           </Text>
           </ReactLink>
-          
-        </Stack>
-       
+        </Stack>  
     </Box>
-    
   );
 }
 const DesktopNav = () => {
